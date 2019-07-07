@@ -1,0 +1,69 @@
+/* COMMON */
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+}
+
+/* НАВИГАЦИЯ */
+
+.user-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  padding-left: 1rem;
+}
+
+.main-nav .active {
+  background-color: gray;
+  color: white!important;
+  border-radius: 5px;
+}
+
+/* MAP BLOCK */
+
+.map__block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: gray;
+  min-height: 750px;
+}
+
+.map__wrap {
+  position: relative;
+}
+
+.map__filter {
+  max-width: 500px;
+  min-width: 500px;
+  min-height: 500px;
+  margin-left: 1rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* FILTER BLOCK */
+
+.form-group label {
+  margin-bottom: 0.2rem;
+}
