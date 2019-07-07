@@ -1,6 +1,6 @@
 /* COMMON */
 
-*, ::before, ::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -23,6 +23,24 @@
 }
 
 /* НАВИГАЦИЯ */
+
+.main-header {
+  background-color: brown;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.main-header__logo {
+  color: white;
+}
+
+.main-header__logo:hover,
+.main-header__logo:focus {
+  color: white;
+  opacity: 0.8;
+}
 
 .user-nav .nav-item {
   display: flex;
@@ -47,6 +65,8 @@
   align-items: center;
   background-color: gray;
   min-height: 750px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .map__wrap {
@@ -66,4 +86,150 @@
 
 .form-group label {
   margin-bottom: 0.2rem;
+}
+
+.submit-btn {
+  background-color: #006363;
+  color: white;
+}
+
+/* POPUP */
+
+.popup {
+  position: relative;
+}
+
+.popup__wrap {
+  height: 100%;
+}
+
+.popup__close {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding: 0;
+    font-size: 0;
+    border: 0;
+    background: none;
+}
+
+.popup__close::after {
+  font-size: 50px;
+  line-height: 40px;
+  display: block;
+  content: "×";
+  color: #000000;
+}
+
+/* MAP CARD */
+
+.map__card {
+  z-index: 2;
+  width: 350px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* FOOTER */
+
+.page-footer {
+  background-color: #a52a2ac9;
+}
+
+/* FOOTER COPYRIGHT */
+
+footer.page-footer .footer-copyright {
+  background-color: brown;
+}
+
+/* BUILDER (карточка застройщика) */
+
+.builder {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  outline: 1px dotted gray;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.builder__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.builder__img-wrap {
+  min-width: 13%;
+  max-width: 13%;
+}
+
+.builder__desc {
+  padding-top: 1.25rem;
+  padding-right: 2rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2rem;
+  flex-grow: 1;
+}
+
+.builder__desc:hover,
+.builder__desc:focus {
+  background-color: antiquewhite;
+}
+
+.builder__desc h3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.builder__rating-text {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.builder__other {
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.builder__other div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  outline: 1px dotted gray;
+}
+
+/* Подменю страна застройщиков */
+
+.page-menu__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.md-form {
+  min-width: 350px;
+  margin: 0;
+}
+
+/*ADD COMMENT FORM */
+
+.add-comment__title {
+  font-size: 1rem;
+}
+
+.rating-input {
+  width: 100px;
+}
+
+/* Слайдер в карточке описания застройщика */
+
+.slider__listing {
+  font-size: 2rem;
 }

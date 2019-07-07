@@ -1,15 +1,13 @@
 <h1 class="visually-hidden">Сайт для поиска надёжных застройщиков</h1>
-<app-navbar></app-navbar>
+<header>
+  <app-navbar></app-navbar>
+</header>
 <app-top-menu></app-top-menu>
 
 <div class="container-fluid map grey lighten-4">
   <div class="row">
     <div class="col-sm px-0 map__wrap">
-      <section class="map__block">
-        <div class="container">
-          <router-outlet></router-outlet>
-        </div>
-      </section>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

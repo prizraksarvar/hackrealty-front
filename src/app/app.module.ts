@@ -9,6 +9,9 @@ import { MapPageComponent } from './map-page/map-page.component';
 import { MapFilterComponent } from './map-filter/map-filter.component';
 import { MapComponent } from './map/map.component';
 import {HttpClientModule} from '@angular/common/http';
+import { MapBubbleComponent } from './map-bubble/map-bubble.component';
+import { BuildersPageComponent } from './builders-page/builders-page.component';
+import { BuilderPageComponent } from './builder-page/builder-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import {HttpClientModule} from '@angular/common/http';
     TopMenuComponent,
     MapPageComponent,
     MapFilterComponent,
-    MapComponent
+    MapComponent,
+    MapBubbleComponent,
+    BuildersPageComponent,
+    BuilderPageComponent
   ],
   imports: [
     BrowserModule,
